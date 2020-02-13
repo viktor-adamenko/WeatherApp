@@ -1,2 +1,2 @@
 # WeatherApp
-Simple weather app using ASP.NET MVC5
+Simple weather app using ASP.NET MVC5.
