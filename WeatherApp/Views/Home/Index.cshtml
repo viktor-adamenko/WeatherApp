@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "WeatherApp";
+}
+
+<div class="content-wrapper">
+    <form id="input-form" class="input-section">
+
+        <label>Enter your city</label>
+        <input id="cityInput" value="@ViewBag.LastCityName"/>
+        <button type="submit">Get weather</button>
+
+    </form>
+    <div class="data-section" style="display: none;">
+        <img id="weatherIcon" height="45" width="45" style="border: medium none; width: 45px; height: 45px;" alt="title" src="http://openweathermap.org/images/transparent.png">
+        <div>
+            <ul class="weather-info">
+                <li><span class="text-info">Min temperature: </span><span id="minTemp"></span> °C</li>
+                <li><span class="text-info">Max temperature: </span><span id="maxTemp"></span> °C</li>
+                <li class="rain-info"><span class="text-info">Precipitation: </span><span id="precipitation"></span> mm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="error-section">
+        <span id="error-text"></span>
+    </div>
+</div>

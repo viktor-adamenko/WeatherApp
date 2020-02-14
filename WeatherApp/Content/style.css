@@ -1,0 +1,112 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+}
+
+input {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+body {
+    justify-content: center;
+    background-color: #efefef;
+    overflow-y: hidden;
+}
+
+.content-wrapper {
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px -5px black;
+}
+
+.input-section {
+    padding-bottom: 30px;
+    /*border-bottom: 1px solid #fcfcfc;*/
+}
+
+.content-wrapper .input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+        .content-wrapper .input-section label {
+            display: block;
+            color: #757575;
+            font-size: 15px;
+        }
+
+    .content-wrapper .input-section input {
+        outline: none;
+        margin-bottom: 25px;
+        font-size: 18px;
+        text-align: center;
+        height: 35px;
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        border-bottom: 2px solid #b7b7b7;
+    }
+
+        .content-wrapper .input-section button {
+            border: 2px solid #137eb7;
+            color: #137eb7;
+            outline: none;
+            background-color: transparent;
+            border-radius: 3px;
+            font-size: 18px;
+            padding: 8px;
+            transition: .15s;
+        }
+
+            .content-wrapper .input-section button:hover {
+                color: white;
+                background-color: #137eb7;
+            }
+            .content-wrapper .input-section button:active {
+                background-color: #1a96d9;
+            }
+
+.data-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+    .data-section ul.weather-info {
+        list-style: none;
+
+    }
+
+    .data-section .text-info {
+        font-size: 15px;
+        margin-right: 10px;
+        color: #757575;
+    }
+
+.error-section {
+    display: flex;
+    justify-content: center;
+
+    color: salmon;
+}
+
+.rain-info {
+    display: none;
+}
